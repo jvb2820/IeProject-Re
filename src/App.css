@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.Main {
+    display: flex;
+    height: 100vh;
+    
+}
+.header{
+    flex: 1;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/public/bgPage.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Sidebar {
+    height: 100%;
+    width: 250px;
+    background-color: maroon;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SidebarList{
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+.SidebarList .Row {
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Row #icon{
+    flex: 30%;
+    display: grid;
+    place-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Row #title{
+    flex: 70%;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Sidebar .Row:hover{
+    cursor: pointer;
+    background-color: gold;
+}
+
+.SidebarList #active{
+    background-color: gold;
+}
+
+.b1{
+    background-color: maroon;
 }
